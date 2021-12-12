@@ -1,3 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("lemons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Prompt;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.content-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  height: 100%;
+/*   overflow: hidden; */
+}
+
 img {
   object-fit: cover;
   height: 50vh;
@@ -8,6 +34,10 @@ img {
   object-fit: cover;
   height: 20vh;
   max-width: 100vh;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 h3 {
@@ -68,7 +98,6 @@ a:hover {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
@@ -97,6 +126,44 @@ a:hover {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
+}
+
+.center-stuff{
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-form {
+  max-width: 40%;
+  margin: auto;
+}
+
+.center-login {
+  /* display: flex; */
+  padding-top: 15%;
+}
+
+#login-header {
+  text-align: center;
+}
+
+#register-here {
+  text-align: center;
+}
+
+.center-register {
+  /* display: flex; */
+  padding-top: 5%;
 }

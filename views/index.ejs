@@ -13,10 +13,10 @@
                 <img href='<%=gif%>' src='<%=gif%>.gif'>
             </div>
         </div>
-        <button type="button" onClick="refreshPage()">New Gif</button>
+        <button type="button" class="btn btn-light" onClick="refreshPage()">New Gif</button>
         <form action="/" method="POST" id='save_form'>
             <input type="hidden" id="gif" name="gif" value="<%=gif%>">
-            <button type="submit">Save Gif</button>
+            <button type="submit" class="btn btn-warning"">Save Gif</button>
         </form>
     </div>
 </div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
         <% }) %>
-    </div>    
+    </div>
 </div>
 
 
@@ -43,7 +43,7 @@
 
     function refreshPage(){
         window.location.reload();
-    } 
+    }
     function openCity(evt, cityName) {
         // Declare all variables
         var i, tabcontent, tablinks;
