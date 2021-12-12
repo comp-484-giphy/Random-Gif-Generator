@@ -17,7 +17,7 @@ input {
 }
 
 .content-wrap {
-  max-width: 80%;
+  max-width: 80%; 
   margin: 0 auto;
   padding: 40px;
   height: 100%;
@@ -63,6 +63,7 @@ a:hover {
   display: grid;
   align-items: center;
   justify-content: center;
+  min-height: 550px;
 }
 
 .save-container {
@@ -150,9 +151,19 @@ a:hover {
   margin: auto;
 }
 
+.register-form {
+  max-width: 40%;
+  margin: auto;
+}
+
 .center-login {
   /* display: flex; */
   padding-top: 15%;
+}
+
+.center-register {
+  /* display: flex; */
+  padding-top: 5%;
 }
 
 #login-header {
@@ -163,7 +174,10 @@ a:hover {
   text-align: center;
 }
 
-.center-register {
-  /* display: flex; */
-  padding-top: 5%;
+#new {
+  width: 300px;
+}
+
+#save {
+  width: 300px;
 }
