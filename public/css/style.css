@@ -63,6 +63,7 @@ a:hover {
   display: grid;
   align-items: center;
   justify-content: center;
+  min-height: 550px;
 }
 
 .save-container {
@@ -127,7 +128,6 @@ a:hover {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -152,9 +152,19 @@ a:hover {
   margin: auto;
 }
 
-.center-on-page {
+.register-form {
+  max-width: 40%;
+  margin: auto;
+}
+
+.center-login {
   /* display: flex; */
   padding-top: 15%;
+}
+
+.center-register {
+  /* display: flex; */
+  padding-top: 5%;
 }
 
 #login-header {
@@ -163,4 +173,13 @@ a:hover {
 
 #register-here {
   text-align: center;
+}
+
+
+#new {
+  width: 300px;
+}
+
+#save {
+  width: 300px;
 }

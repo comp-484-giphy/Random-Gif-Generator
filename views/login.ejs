@@ -1,7 +1,7 @@
 <%- include('./_header.ejs') %>
 
     <body class="content-wrap" id="login-page">
-        <div class="center-on-page">
+        <div class="center-login">
             <h1 id="login-header">Login</h1>
             <% if(messages.error){ %>
                 <%= messages.error %>
@@ -16,7 +16,7 @@
                                     <label for="password">Password</label>
                                     <input type="password" id="password" name="password" required>
                                 </div>
-                                <button type="submit" id="login-button">Login</button>
+                                <button type="submit" id="login-button" class="btn btn-dark">Login</button>
                             </form>
                             <p id="register-here">Don't have an account? <i><a href="/register">Register here.</a></i></p>
                         </div>
