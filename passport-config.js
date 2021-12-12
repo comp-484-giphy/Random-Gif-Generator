@@ -4,7 +4,7 @@ const userSchema = require('./schemas/PlayerSchema')
 function initialize(passport, getUserByEmail, getUserById) {
     const authenticateUser = async (email, password, done) => {
 
-        user = await userSchema.findOne({ "email": email })
+        let user = await userSchema.findOne({ "email": email })
         console.log(password)
         console.log(user.email)
         if (user == undefined) {
