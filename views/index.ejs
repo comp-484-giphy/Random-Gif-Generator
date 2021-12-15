@@ -5,7 +5,7 @@
         <button class="tablinks" onclick="openTabs(event, 'Random')" id="defaultOpen">Random Gifs</button>
         <button class="tablinks" onclick="openTabs(event, 'Saved')">Saved Gifs</button>
         <form action="/logout">
-            <button class="tablinks">Log Out</button>
+            <button class="tablinks" aligh="right">Log Out</button>
         </form>
     </div>
 
@@ -32,7 +32,7 @@
                         <div class="card">
                             <img class='saved' href='<%=item.gif%>' src='<%=item.gif%>'>
                             <form action= '/delete/<%=item.id%>' class="delete" method="POST">
-                                <button>Delete</button>
+                                <button class="btn btn-danger btn-sm">X</button>
                             </form>
                         </div>
                     </div>

@@ -21,6 +21,19 @@ input {
 /*   overflow: hidden; */
 }
 
+.delete {
+  position: absolute;
+}
+
+.delete-btn {
+  margin: 0;
+  padding-top: 0;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  font-size: 15;
+}
+
 img {
   object-fit: cover;
   height: 50vh;
@@ -31,6 +44,7 @@ img {
   object-fit: cover;
   height: 20vh;
   max-width: 100vh;
+  padding-bottom: 3px;
 }
 
 h1 {
@@ -87,6 +101,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background: transparent;
 }
 
 .card:hover {
