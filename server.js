@@ -65,6 +65,12 @@ app.post('/', checkAuthenticated, async (req, res) => {
     res.redirect('/')
 })
 
+app.post('/delete/:id', checkAuthenticated, async (req, res) => {
+    console.log("Delete gif ID " + req.params.id)
+    await gifSchema.find({ id: req.params.id }).remove();
+    res.redirect('/')
+})
+
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/login',
