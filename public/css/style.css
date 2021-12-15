@@ -6,10 +6,7 @@ html {
 }
 
 body {
-  background-image: url("lemons.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Prompt;
+  background-image: url('lemons.png');
 }
 
 input {
@@ -146,13 +143,27 @@ a:hover {
   clear: both;
 }
 
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
+.login-box {
+  padding: 1.5rem; 
+  backdrop-filter: blur(5px);
+  border-radius: .25rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  /* box-shadow: 10px 10px 10px 10px grey; */
+}
 .login-form {
-  max-width: 40%;
+  max-width: 80%;
   margin: auto;
 }
 
 .register-form {
-  max-width: 40%;
+  max-width: 80%;
   margin: auto;
 }
 
