@@ -67,7 +67,7 @@ app.post('/', checkAuthenticated, async (req, res) => {
 
 app.post('/delete/:id', checkAuthenticated, async (req, res) => {
     console.log("Delete gif ID " + req.params.id)
-    await gifSchema.find({ id: req.params.id }).remove();
+    await gifSchema.deleteOne({ id: req.params.id });
     res.redirect('/')
 })
 
