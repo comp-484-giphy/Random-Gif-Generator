@@ -1,3 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url('lemons.png');
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.content-wrap {
+  max-width: 80%; 
+  margin: 0 auto;
+  padding: 40px;
+  height: 100%;
+/*   overflow: hidden; */
+}
+
+.delete {
+  position: absolute;
+}
+
+.delete-btn {
+  margin: 0;
+  padding-top: 0;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  font-size: 15;
+}
+
 img {
   object-fit: cover;
   height: 50vh;
@@ -8,6 +44,11 @@ img {
   object-fit: cover;
   height: 20vh;
   max-width: 100vh;
+  padding-bottom: 3px;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 h3 {
@@ -33,6 +74,7 @@ a:hover {
   display: grid;
   align-items: center;
   justify-content: center;
+  min-height: 550px;
 }
 
 .save-container {
@@ -59,6 +101,7 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background: transparent;
 }
 
 .card:hover {
@@ -68,7 +111,6 @@ a:hover {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
@@ -97,6 +139,71 @@ a:hover {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
+}
+
+.center-stuff{
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
+.login-box {
+  padding: 1.5rem; 
+  backdrop-filter: blur(5px);
+  border-radius: .25rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  /* box-shadow: 10px 10px 10px 10px grey; */
+}
+.login-form {
+  max-width: 80%;
+  margin: auto;
+}
+
+.register-form {
+  max-width: 80%;
+  margin: auto;
+}
+
+.center-login {
+  /* display: flex; */
+  padding-top: 15%;
+}
+
+.center-register {
+  /* display: flex; */
+  padding-top: 5%;
+}
+
+#login-header {
+  text-align: center;
+}
+
+#register-here {
+  text-align: center;
+}
+
+#new {
+  width: 300px;
+}
+
+#save {
+  width: 300px;
 }
