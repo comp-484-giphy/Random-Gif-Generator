@@ -1,6 +1,5 @@
 <%- include('./_header.ejs') %>
 
-
     <div class="tab">
         <button class="tablinks" onclick="openTabs(event, 'Random')" id="defaultOpen">Random Gifs</button>
         <button class="tablinks" onclick="openTabs(event, 'Saved')">Saved Gifs</button>
@@ -31,7 +30,7 @@
                     <div class="card">
                         <div class="card">
                             <img class='saved' href='<%=item.gif%>' src='<%=item.gif%>'>
-                            <form action= '/delete/<%=item.id%>' class="delete" method="POST">
+                            <form action= '/delete/<%=item._id%>' class="delete" method="POST">
                                 <button class="btn btn-danger btn-sm">X</button>
                             </form>
                         </div>
