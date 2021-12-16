@@ -39,8 +39,10 @@ If Node is installed run the following commands.
 ## Configuring The App
 
 npm install
-Add a `.env` file to the project and a `MONGO`, `SESSION_SECRET`, `ADMIN`. `GIPHY_API_KEY`, and `GIPHY_URL`. 
 
+    $ Add a `.env` file to the project and a `MONGO`, `SESSION_SECRET`, `ADMIN`. `GIPHY_API_KEY`, and `GIPHY_URL`. 
+    $ npm install
+    
 ## Running The App
 
     $ npm run start
