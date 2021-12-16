@@ -9,16 +9,9 @@
 
 ## General Info
 
-![unknown](https://user-images.githubusercontent.com/64388455/135778318-b14aaa3e-0327-4ffe-8c2b-c04bb45ced65.png)
+![Screenshot 2021-12-16 103555](https://user-images.githubusercontent.com/64388455/146429112-82a6955f-8bc1-4ed2-9c37-33d646befd82.png)
 
-This project is a Speed Running Website. You can post you're speed runs, and if they are verified by an ADMIN then it will be posted for the world to see. 
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/64388455/135778330-4074afd8-92a4-4cde-a44c-b4fa9ec26987.png" />
-</p>
-
-If there is a game that you love speedrunning but cannot find it, then you can make a request to have that game up for the world to see.
-
+This is a random gif website. You can save your random gifs.
 ## Technologies
 
 Project is created with:
@@ -39,13 +32,14 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 If Node is installed run the following commands.
 
-    $ git clone https://github.com/Zaid-Web-Applications-Personal/Speed-Running-Site.git
-    $ cd Speed-Running-Website
+    $ git clone https://github.com/comp-484-giphy/Random-Gif-Generator.git
+    $ cd Random-Gif-Generator
     $ npm install
 
 ## Configuring The App
 
-Add a `.env` file to the project and a `SESSION_SECRET`, `ADMIN`, and `MONGO`. `SESSION_SECRET` can be random and the same for `ADMIN`. For `MONGO` get the url for your database.
+  $ npm install
+  $ Add a `.env` file to the project and a `MONGO`, `SESSION_SECRET`, `ADMIN`. `GIPHY_API_KEY`, and `GIPHY_URL`. 
 
 ## Running The App
 
