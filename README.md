@@ -1,4 +1,6 @@
-# Speed Running Website
+# Random Gif Generator
+
+https://comp484-gif-generator.herokuapp.com/
 
 - [General info](#general-info)
 - [Technologies](#technologies)
